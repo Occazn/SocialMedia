@@ -1,0 +1,20 @@
+
+ const isEmpty = value =>  
+   // function isEmpty(value){       // same as function isEmpty(value){return ();}
+        value === undefined || 
+        value === null || 
+        (typeof value === 'object' && Object.keys(value).length === 0) || 
+        (typeof value == 'string' && value.trim().length === 0);
+
+    module.exports = isEmpty;
+
+    // could also be
+    // const isEmpty = value => { 
+    //     // function isEmpty(value){       // same as function isEmpty(value){return ();}
+    //      return(
+    //          value === undefined || 
+    //          value === null || 
+    //          (typeof value === 'object' && Object.keys(value).length === 0) || 
+    //          (typeof value == 'string' && value.trim().length === 0)
+    //      );
+    //  }
